@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>
+</title>
+<script type="text/javascript" src="../scripts/jquery-1.4.2.min.js"></script>
+<!-- <script type="text/javascript" src="../scripts/jquery.syntaxhighlighter.min.js"></script> -->
+<script type="text/javascript" src="../scripts/jquery.syntaxhighlighter.js"></script>
+<script type="text/javascript">/*<![CDATA[*/
+	
+/*]]>*/</script>
+
+<link type="text/css" rel="stylesheet" media="screen" href="./styles/style.css" />
+<style>
+body pre{
+	/* background:black; */
+}
+
+</style>
+</head>
+<body>
+	<!-- <script type="text/javascript" src="http://s3.amazonaws.com/getsatisfaction.com/javascripts/feedback-v2.js"></script>  -->
+	<script type="text/javascript">/*<![CDATA[*/
+
+
+	/*var GSFN_feedback_widget = new GSFN.feedback_widget({ display: 'overlay', company: 'balupton', placement: 'right', color: '#222', style: 'question' });*/
+
+
+	/*]]>*/</script> 
+	<div class="section options" id="options">
+		<pre class="code language-html">
+			&lt;div class='col-lg-3 col-xs-6'&gt;
+	          &lt;div class='small-box bg-yellow'&gt;
+	            &lt;div class='inner'&gt;
+	              &lt;h3&gt;80&lt;/h3&gt;
+
+	              &lt;p&gt;高风险事件数&lt;/p&gt;
+	            &lt;/div&gt;
+	            &lt;div class='icon'&gt;
+	              &lt;i class='fa fa-warning'&gt;&lt;/i&gt;
+	            &lt;/div&gt;
+	          &lt;/div&gt;
+	        &lt;/div&gt;
+		</pre>
+	</div>
+	<div class="section options" id="options">
+		<pre class="code language-html" id="arr">
+			
+		</pre>
+	</div>
+	
+	<!-- <script type="text/javascript"> 
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>  -->
+	<!-- <script type="text/javascript" src="./scripts/modernizr-1.5.min.js"></script>  -->
+	<!-- <script type="text/javascript"> 
+		try {
+			var pageTracker = _gat._getTracker("UA-4446117-1");
+			pageTracker._initData();
+			pageTracker._setCustomVar(1, "html5.boxshadow", Modernizr.boxshadow ? "yes" : "no" , 2 );
+			pageTracker._setCustomVar(2, "html5.multiplebgs", Modernizr.multiplebgs ? "yes" : "no", 2 );
+			pageTracker._setCustomVar(3, "html5.fontface", Modernizr.fontface ? "yes" : "no", 2 );
+			pageTracker._setCustomVar(4, "html5.csstransitions", Modernizr.csstransitions ? "yes" : "no", 2 );
+			pageTracker._setCustomVar(5, "html5.borderradius", Modernizr.borderradius ? "yes" : "no", 2 );
+			pageTracker._trackPageview();
+		} catch(err) {}
+	</script> -->
+</body>
+<script type="text/javascript">
+$.SyntaxHighlighter.init();
+// var arr = document.getElementById("arr");
+function escapeHtml(unsafe) {
+    return unsafe 
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
+        
+ }
+
+function light(){
+	var str = "<div class='col-lg-3 col-xs-6'>"+
+          "<div class='small-box bg-yellow'>"+
+            "<div class='inner'>"+
+              "<h3>80</h3>"+
+
+              "<p>高风险事件数</p>"+
+            "</div>"+
+            "<div class='icon'>"+
+              "<i class='fa fa-warning'></i>"+
+            "</div>"+
+          "</div>"+
+        "</div>";
+    $("#arr").html(escapeHtml(str));
+}
+light();
+
+
+
+</script>
+</html>
